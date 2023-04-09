@@ -1,0 +1,8 @@
+transformers
+timm
+fastapi
+uvicorn
+python-multipart
+opencv-python
+pytesseract
+streamlit
