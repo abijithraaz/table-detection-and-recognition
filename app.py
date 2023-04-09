@@ -18,7 +18,7 @@ app = FastAPI()
 
 # Table detection model loading
 try:
-    detection_model = TableTransformerForObjectDetection.from_pretrained("./models/detection-model/")
+    detection_model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
 except:
     print('Table detection model loading is failed!!')
 
@@ -71,7 +71,7 @@ def table_data_extraction_from_image(file: UploadFile = File(...)):
 #     exracted_table_data = textdataextractor.cell_data_extraction(image, preprocessed_tables)
 #     return exracted_table_data
 
-if __name__ == '__main__':
-    # extraction = table_data_extraction_from_image1('D:\\Table-detection\\example-images\\2tables.png')
-    # print(extraction)
-    uvicorn.run("app:app", port=5000, reload=False, access_log=False)
+# if __name__ == '__main__':
+#     # extraction = table_data_extraction_from_image1('D:\\Table-detection\\example-images\\2tables.png')
+#     # print(extraction)
+#     uvicorn.run("app:app", port=5000, reload=False, access_log=False)
