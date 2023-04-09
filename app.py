@@ -24,7 +24,7 @@ except:
 
 # Recognition model loading
 try:
-    recognition_model = TableTransformerForObjectDetection.from_pretrained("./models/recognition-model/")
+    recognition_model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-structure-recognition")
 except:
     print('Table recognition model loading is failed!!')
 
