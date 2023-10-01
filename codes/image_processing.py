@@ -5,6 +5,8 @@ from PIL import Image
 
 # Some image process techniques to improve the images.
 class ImageProcessor():
+    def __init__(self):
+        pass
 
     def PIL_to_cv2(self, pil_img):
         return cv2.cvtColor(np.array(pil_img), cv2.COLOR_RGB2BGR) 
