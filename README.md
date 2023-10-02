@@ -1,4 +1,4 @@
-# table-detection-and-recognition
+# Table-detection-and-recognition
 table-detection-and-recognition-using-table-transformer
 
 # Details
