@@ -8,3 +8,6 @@ Config = {"table_detection_padding_pixel":10, 'table_recognition_padding_pixel':
         }
         
 tesseract_config = {'tesseractpath':'C://Program Files//Tesseract-OCR//tesseract.exe'}
+
+model_config = {'detection_model_path':'D:/Table-detection/models/detection-model',
+                'recognition_model_path':'D:/Table-detection/models/recognition-model'}

@@ -1,9 +1,10 @@
 import os
-
 from datatypes.datatypes import DetectionLabels, TableRecognitionOrdered
 
-
 class TablePreprocessor():
+    def __init__(self):
+        pass
+
     def table_structure_sorting(self, table_data):
         for table in table_data.tables:
             recognized_row = []

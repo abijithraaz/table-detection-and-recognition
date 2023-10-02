@@ -2,15 +2,13 @@ import os
 import re
 import pytesseract
 from pytesseract import Output
-
 from datatypes.datatypes import Row, Cell
 from codes.image_processing import ImageProcessor
 from datatypes.config import Config
 
 class TextDataExtraction():
-    def __init__(self, tesseract_path):
-        self.tesseract_path = tesseract_path
-        pytesseract.pytesseract.tesseract_cmd = self.tesseract_path
+    def __init__(self):
+        pass
     
     def clean_ocr_data(self, value):
         transf = ''.join(e for e in value if e==' 'or e=='.' or e.isalnum())
