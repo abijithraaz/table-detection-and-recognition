@@ -11,8 +11,9 @@ table-detection-and-recognition-using-table-transformer
 - Deployed solution in HuggingFace Space Link : [ClickHere](https://huggingface.co/spaces/Abijith/Table-Detection-and-Recognition-using-DETR)
 
 ## More details and Todo
-- FastAPI access portion is available.
+- FastAPI access portion is als0 available.
 - Need to improve the
     - Image preprocessing
     - Data extraction(OCR)
     - Post processing
+    - UI
