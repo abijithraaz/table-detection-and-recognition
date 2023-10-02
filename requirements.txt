@@ -6,4 +6,3 @@ python-multipart
 opencv-python
 pytesseract
 streamlit
-tesseract-ocr

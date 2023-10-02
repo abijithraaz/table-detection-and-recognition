@@ -2,13 +2,12 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-RUN apt install tesseract-ocr
-
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
     software-properties-common \
     git \
+    tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/abijithraaz/table-detection-and-recognition.git .
