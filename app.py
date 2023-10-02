@@ -21,7 +21,7 @@ if platform.system() == 'Windows':
     pytesseract.pytesseract.tesseract_cmd = tesseract_config['tesseractpath']
 
 # Table detection-recognition model loading function
-@st.experimental_singleton
+@st.cache_resource
 def load_models():
     try:
         # models loading from local
