@@ -14,6 +14,20 @@ RUN git clone https://github.com/abijithraaz/table-detection-and-recognition.git
 
 RUN pip3 install -r requirements.txt
 
-EXPOSE 8501
+# Set up a new user named "user" with user ID 1000
+RUN useradd -m -u 1000 user
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Switch to the "user" user
+USER user
+
+# Set home to the user's home directory
+ENV HOME=/home/user \
+    PATH=/home/user/.local/bin:$PATH
+
+# Set the working directory to the user's home directory
+WORKDIR $HOME/app
+
+# Copy the current directory contents into the container at $HOME/app setting the owner to the user
+COPY --chown=user . $HOME/app
+
+ENTRYPOINT ["streamlit", "run", "app.py"]
