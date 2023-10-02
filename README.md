@@ -5,7 +5,7 @@ table-detection-and-recognition-using-table-transformer
 
 ## Local run
 - model deatils are given
-- to run in local ```**streamlit run app.py**```
+- to run in local ```streamlit run app.py```
 
 ## Deployment
 - Deployed solution in HuggingFace Space Link : [ClickHere](https://huggingface.co/spaces/Abijith/Table-Detection-and-Recognition-using-DETR)
